@@ -13,17 +13,28 @@ There could be any reason to change link in blogger. For example; user wants to 
 It is much easy to change hyperlink color in blogger default templates because in these templates only a single color scheme is used for all links. To make changes in them go to Blogger > Template > Customise > Advance > Add CSS.
 
 Now after that paste the following piece of code in Add CSS box.
-a:link { color: #ff0000 !important; }
-a:visited { color: #0000ff !important; }
+
+a:link { color: #ff0000 !important; } 
+
+a:visited { color: #0000ff !important; }  
+
 a:hover { color: #38761d !important; }
-a:active { color: #ff9900 !important; }
+
+a:active { color: #ff9900 !important; }    
+
 And then tap on Apply to blog button to save changes.
 
 In case you are not familiar with html color codes or facing any difficulties then you can simply replace color code (for example #ff0000) with the name of desired color. Checkout following piece of code to get an idea of what I'm saying,
+
 a:link { color: red !important; }
+
 a:visited { color: blue !important; }
+
 a:hover { color: green !important; }
+
 a:active { color: orange !important; }
+
+
 
 
 # HOW TO CHANGE COLOR OF SPECIFIC HYPERLINK
@@ -31,11 +42,14 @@ a:active { color: orange !important; }
 
 n case you are interested to apply different color schemes on links within specfic sections forexample, Sidebar, any specific widget, footer links, post links, etc. then, you need to be little designer :P . The method is quite simple, you just need to mention the CLASS or an ID of that specific section before writing css code for link. For example, if I need to change the color of links only within blog post body (Bloggeristan) then I need to add following lines in Add CSS box.
 
+
 .post-body a {
 color: red !important;
 }
 
+
 To add hover effect you need add another line,
+
 .post-body a:hover {
 color: green !important;
 }
